@@ -1,11 +1,14 @@
 import {KVNamespace} from "@cloudflare/workers-types"
 
-export default defineEventHandler(async({context}) => {
+export default defineEventHandler(async ({context}) => {
     const onclf:KVNamespace = context.cloudflare.env.onclf
 
-    onclf.put("key", "initialvalue")
+   await onclf.put("key", "initialvalue")
 
-    return {
-        key: 'data'
-    }
+   const newData = async() =>   await onclf.get("key")
+
+   console.log(newData)
+    return newData ?? "nodata"
+
+ 
 })

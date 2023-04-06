@@ -1,10 +1,11 @@
 <template>
   <div>
-  <h1>On cloudflare, {{ data }}</h1>
+    <h1>On cloudflares, {{ data }}</h1>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+const data = await $fetch("/api/hello")
 
-const data = await useFetch("api/env")
 </script>
