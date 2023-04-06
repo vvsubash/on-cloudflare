@@ -1,6 +1,6 @@
 import { KVNamespace } from "@cloudflare/workers-types"
 
-export default defineEventHandler(async ({context} ) => {
+export default defineEventHandler(async (context) => {
   
   return {
     title: 'Mount Everest',
