@@ -1,10 +1,10 @@
-import { Fetcher, PagesFunction } from "@cloudflare/workers-types";
+import { Fetcher, PagesFunction, Response } from "@cloudflare/workers-types";
 
 interface Env {
     SERVICE: Fetcher;
   }
   
   export const onRequest: PagesFunction<Env> = async (context) => {
-    return context.env.SERVICE.fetch(context.request);
+    return new Response("hi");
   }
   
