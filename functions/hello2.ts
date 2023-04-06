@@ -5,6 +5,7 @@ interface Env {
   }
   
   export const onRequest: PagesFunction<Env> = async (context) => {
+    console.log("hit hello2")
     return new Response("hi");
   }
   
