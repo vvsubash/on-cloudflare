@@ -1,3 +1,6 @@
 name = "on-cloudflare"
 compatibility_date = "2023-04-06"
 
+kv_namespaces =[
+    { binding = "onclf", id = "e1dadcda7e1e4c57af1354f5fe99a4f3", preview_id = "6eaf63e29401480d88d70f5a3db40e97" }
+]
