@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230404.0",
-    "nuxt": "^3.3.3",
+    "nuxt": "npm:nuxt3@latest",
     "wrangler": "^2.13.0"
   }
 }
