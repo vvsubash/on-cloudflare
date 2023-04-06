@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+  <h1>On cloudflare</h1>
   </div>
 </template>
