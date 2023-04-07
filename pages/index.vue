@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Neom is a mega project</h1>
+        <h1>Neom is a mega project i think</h1>
     </div>
 </template>
 
