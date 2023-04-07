@@ -1,8 +1,14 @@
+import "@cloudflare/workers-types"
+import { KVNamespace, PagesFunction } from "@cloudflare/workers-types"
 
-  export const onRequest = async (context) => {
+interface Env {
+  KV: KVNamespace
+}
 
-    const {request} = context
-    
-    return new Response(request?.cf?.colo ?? "dfds");
-  }
-  
+export const onRequest:PagesFunction<Env> (async(context: { request: any }) => {
+
+  const {request} = context
+
+  return new Response(request.cf.colo)
+
+})
