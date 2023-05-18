@@ -1,6 +1,11 @@
 name = "on-cloudflare"
 compatibility_date = "2023-04-06"
 
-kv_namespaces =[
-    { binding = "onclf", id = "e1dadcda7e1e4c57af1354f5fe99a4f3", preview_id = "6eaf63e29401480d88d70f5a3db40e97" }
+[[d1_databases]]
+binding = "DB"
+database_name = "on-cloudflare"
+database_id = "6cc11288-115e-4c7c-8124-d4ece32c9d2f"
+
+kv_namespaces = [
+    { binding = "onclf", id = "f30f1d9c8bd94145ac8e25a2fd3d1ecf", preview_id = "f30f1d9c8bd94145ac8e25a2fd3d1ecf" },
 ]
